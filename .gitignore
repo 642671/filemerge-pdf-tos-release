@@ -1,0 +1,6 @@
+*.deb
+*.sha256
+build/
+dist/
+.DS_Store
+Thumbs.db
