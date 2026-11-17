@@ -6,12 +6,12 @@ The full development source repository is private. Only installable release asse
 
 ## Latest release
 
-**v0.1.4** — 2026-11-17
+**v0.1.5** — 2026-11-17
 
 | Asset | SHA-256 |
 | --- | --- |
-| `filemerge-pdf_0.1.4_x86_64.deb` | `2b6f577493aac430f3c8fbcf3f721b2f1b0607378fbff23d825c606918507fb1` |
-| `filemerge-pdf_0.1.4_aarch64.deb` | `b619a733fa4530c4f8dad6ef53ebcbb82cde0235e1582336248c246a98eca0fc` |
+| `filemerge-pdf_0.1.5_x86_64.deb` | `6233f93b2e534bf3232a6b84c27653b227ff98c04e7ba928dd90b334366f117e` |
+| `filemerge-pdf_0.1.5_aarch64.deb` | `07d0a5a5f62cfe11ea8a62681e0e02eb74c72688472142ed14ae4aed69d38722` |
 
 Download the matching `.sha256` file from the same Release. Previous releases remain available under [Releases](https://github.com/642671/filemerge-pdf-tos-release/releases).
 
@@ -27,7 +27,7 @@ Download the matching `.sha256` file from the same Release. Previous releases re
 Download the package for your NAS architecture, then install from App Center's manual installation or:
 
 ```sh
-sudo dpkg -i filemerge-pdf_0.1.4_x86_64.deb
+sudo dpkg -i filemerge-pdf_0.1.5_x86_64.deb
 ```
 
 The package starts `filemergepdf-system.service` and creates `/var/api/filemerge-pdf.sock`. Installation diagnostics are written to `/usr/local/filemerge-pdf/logs/postinst-diagnostic.txt` when startup fails.
@@ -40,6 +40,8 @@ The package starts `filemergepdf-system.service` and creates `/var/api/filemerge
 - PDF export with paper size, orientation, fit, quality and margins; exact assembly order.
 - Export history with immutable snapshots, failure details, download and re-export.
 - TOS iframe WebUI with TOS session/CSRF handling and Unix-socket backend.
+- Custom-styled dropdowns with keyboard navigation, dark theme and viewport-aware menus.
+- Clear blocked-export dialog when Word/Excel files need LibreOffice, including the affected file list.
 
 ## Known limitations
 
