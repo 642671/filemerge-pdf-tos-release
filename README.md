@@ -6,14 +6,14 @@ The full development source repository is private. Only installable release asse
 
 ## Latest release
 
-**v0.1.3** — 2026-11-17
+**v0.1.4** — 2026-11-17
 
 | Asset | SHA-256 |
 | --- | --- |
-| `filemerge-pdf_0.1.3_x86_64.deb` | `6e8cf1f3bc81b801f7094afb1ebb1bc02f9f26f64d7276882bb00a25f358727f` |
-| `filemerge-pdf_0.1.3_aarch64.deb` | `6ebf6a0170055b28b025e0328a9756e0da006c2d1ece95e1c28feade07e1ee8a` |
+| `filemerge-pdf_0.1.4_x86_64.deb` | `2b6f577493aac430f3c8fbcf3f721b2f1b0607378fbff23d825c606918507fb1` |
+| `filemerge-pdf_0.1.4_aarch64.deb` | `b619a733fa4530c4f8dad6ef53ebcbb82cde0235e1582336248c246a98eca0fc` |
 
-Download the matching `.sha256` file from the same Release.
+Download the matching `.sha256` file from the same Release. Previous releases remain available under [Releases](https://github.com/642671/filemerge-pdf-tos-release/releases).
 
 ## Requirements
 
@@ -27,7 +27,7 @@ Download the matching `.sha256` file from the same Release.
 Download the package for your NAS architecture, then install from App Center's manual installation or:
 
 ```sh
-sudo dpkg -i filemerge-pdf_0.1.3_x86_64.deb
+sudo dpkg -i filemerge-pdf_0.1.4_x86_64.deb
 ```
 
 The package starts `filemergepdf-system.service` and creates `/var/api/filemerge-pdf.sock`. Installation diagnostics are written to `/usr/local/filemerge-pdf/logs/postinst-diagnostic.txt` when startup fails.
