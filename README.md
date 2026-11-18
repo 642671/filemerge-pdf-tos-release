@@ -6,12 +6,12 @@ The full development source repository is private. Only installable release asse
 
 ## Latest release
 
-**v0.1.6** — 2026-11-17
+**v0.1.7** — 2026-11-18
 
 | Asset | SHA-256 |
 | --- | --- |
-| `filemerge-pdf_0.1.6_x86_64.deb` | `f7f27c58e95856ba672c382b0828a73f6a42acfdb215ccd38ace65c2461a2eff` |
-| `filemerge-pdf_0.1.6_aarch64.deb` | `ffd6474a88072088f8fd90f96aac7967ef6423728e8075f951c62e082fbfdd46` |
+| `filemerge-pdf_0.1.7_x86_64.deb` | `e7d22ab9928e60aa8666561632898adcd6c5e7f038838332b967f63e65ce2225` |
+| `filemerge-pdf_0.1.7_aarch64.deb` | `4312d75dfbc764d1123086d1d948244deac589afffd4121215abeb277a4cda09` |
 
 Download the matching `.sha256` file from the same Release. Previous releases remain available under [Releases](https://github.com/642671/filemerge-pdf-tos-release/releases).
 
@@ -25,7 +25,7 @@ Download the matching `.sha256` file from the same Release. Previous releases re
 
 ```sh
 sudo apt-get update
-sudo apt-get install -y --no-install-recommends libreoffice-writer libreoffice-calc
+sudo apt-get install -y --no-install-recommends libreoffice-writer libreoffice-calc fonts-noto-cjk
 ```
 
 ## Install
@@ -33,7 +33,7 @@ sudo apt-get install -y --no-install-recommends libreoffice-writer libreoffice-c
 Download the package for your NAS architecture, then install from App Center's manual installation or:
 
 ```sh
-sudo dpkg -i filemerge-pdf_0.1.6_x86_64.deb
+sudo dpkg -i filemerge-pdf_0.1.7_x86_64.deb
 ```
 
 The package starts `filemergepdf-system.service` and creates `/var/api/filemerge-pdf.sock`. Installation diagnostics are written to `/usr/local/filemerge-pdf/logs/postinst-diagnostic.txt` when startup fails.
@@ -49,6 +49,7 @@ The package starts `filemergepdf-system.service` and creates `/var/api/filemerge
 - Custom-styled dropdowns with keyboard navigation, dark theme and viewport-aware menus.
 - Clear blocked-export dialog when Word/Excel files need LibreOffice, including the affected file list.
 - LibreOffice works under the TOS systemd `ProtectSystem=strict` sandbox by using isolated writable runtime directories.
+- Draggable export dialogs, structured success/failure details, clickable home stat cards, and Chinese font cache invalidation.
 
 ## Known limitations
 
