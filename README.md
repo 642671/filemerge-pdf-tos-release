@@ -6,12 +6,12 @@ The full development source repository is private. Only installable release asse
 
 ## Latest release
 
-**v0.1.7** — 2026-11-18
+**v0.1.8** — 2026-11-18
 
 | Asset | SHA-256 |
 | --- | --- |
-| `filemerge-pdf_0.1.7_x86_64.deb` | `e7d22ab9928e60aa8666561632898adcd6c5e7f038838332b967f63e65ce2225` |
-| `filemerge-pdf_0.1.7_aarch64.deb` | `4312d75dfbc764d1123086d1d948244deac589afffd4121215abeb277a4cda09` |
+| `filemerge-pdf_0.1.8_x86_64.deb` | `193a1af6ab4a88c04d7999b3cdc068bd9f9940c7b267c32804164d3859b85176` |
+| `filemerge-pdf_0.1.8_aarch64.deb` | `ef62920d4da8c89101b060337b421276f31cd0535f695198b930dcda7e700fa4` |
 
 Download the matching `.sha256` file from the same Release. Previous releases remain available under [Releases](https://github.com/642671/filemerge-pdf-tos-release/releases).
 
@@ -33,7 +33,7 @@ sudo apt-get install -y --no-install-recommends libreoffice-writer libreoffice-c
 Download the package for your NAS architecture, then install from App Center's manual installation or:
 
 ```sh
-sudo dpkg -i filemerge-pdf_0.1.7_x86_64.deb
+sudo dpkg -i filemerge-pdf_0.1.8_x86_64.deb
 ```
 
 The package starts `filemergepdf-system.service` and creates `/var/api/filemerge-pdf.sock`. Installation diagnostics are written to `/usr/local/filemerge-pdf/logs/postinst-diagnostic.txt` when startup fails.
